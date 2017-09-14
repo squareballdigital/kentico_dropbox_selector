@@ -1,0 +1,69 @@
+INSERT INTO [dbo].[CMS_FormUserControl]
+           ([UserControlDisplayName]
+           ,[UserControlCodeName]
+           ,[UserControlFileName]
+           ,[UserControlForText]
+           ,[UserControlForLongText]
+           ,[UserControlForInteger]
+           ,[UserControlForDecimal]
+           ,[UserControlForDateTime]
+           ,[UserControlForBoolean]
+           ,[UserControlForFile]
+           ,[UserControlShowInBizForms]
+           ,[UserControlDefaultDataType]
+           ,[UserControlDefaultDataTypeSize]
+           ,[UserControlShowInDocumentTypes]
+           ,[UserControlShowInSystemTables]
+           ,[UserControlShowInWebParts]
+           ,[UserControlShowInReports]
+           ,[UserControlGUID]
+           ,[UserControlLastModified]
+           ,[UserControlForGuid]
+           ,[UserControlShowInCustomTables]
+           ,[UserControlForVisibility]
+           ,[UserControlParameters]
+           ,[UserControlForDocAttachments]
+           ,[UserControlForLongInteger]
+           ,[UserControlResourceID]
+           ,[UserControlType]
+           ,[UserControlParentID]
+           ,[UserControlDescription]
+           ,[UserControlThumbnailGUID]
+           ,[UserControlPriority]
+           ,[UserControlIsSystem])
+     VALUES
+           (N'Dropbox File Selector'
+           ,N'DropboxFileSelector'
+           ,'~/CMSFormControls/SquareballDigital/CloudFileSelectors/Dropbox/Dropbox.ascx'
+           ,1
+           ,1
+           ,0
+           ,0
+           ,0
+           ,0
+           ,1
+           ,1
+           ,'Text'
+           ,500
+           ,1
+           ,1
+           ,1
+           ,1
+           ,NEWID()
+           ,GETDATE()
+           ,0
+           ,1
+           ,0
+           ,N'<form version="2"><field column="DropboxAppKey" visible="true" columntype="text" columnsize="200" publicfield="false" guid="' + CONVERT(varchar(50), NEWID())+ '" reftype="Required" resolvedefaultvalue="False"><properties><fielddescription>Add Drop-ins domains in your Dropbox app settings https://www.dropbox.com/developers/apps/ </fielddescription><fieldcaption>Dropbox App Key</fieldcaption></properties><settings><controlname>TextBoxControl</controlname><AutoCompleteEnableCaching>False</AutoCompleteEnableCaching><AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected><Trim>False</Trim><AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem><FilterMode>False</FilterMode></settings></field></form>'
+           ,1
+           ,0
+           ,NULL
+           ,2
+           ,NULL
+           ,NULL
+           ,NULL
+           ,100
+           ,0)
+GO
+
+
